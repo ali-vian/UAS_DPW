@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui;
+  box-sizing: border-box;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.container {
+  width: 30vw;
+  height: 100vh;
+  background-color: #0f70da;
+}
+.container2 {
+  width: 70vw;
+  height: 100vh;
+  padding: 40px;
+}
+.logo {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  margin-bottom: 70px;
+}
+.logo img {
+  margin: 20px;
+  width: 50px;
+}
+.navbar:nth-child(1) {
+  background-color: #fff;
+  color: #0f70da;
+}
+.navbar {
+  border-bottom: solid 2px #ffff;
+  border-radius: 10px;
+  width: 30vw;
+  height: 50px;
+  padding: 30px 100px;
+  font-size: 20px;
+  color: #fff;
+}
+.container3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.kotak {
+  margin: 30px 0;
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+  border-left: solid 5px #0f70da;
+  box-shadow: 5px 5px 8px #635b5b;
+  padding: 20px;
+}
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.kotak1 {
+  margin: 30px 0;
+  width: 410px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #635b5b;
+  padding: 30px;
+  text-align: justify;
+  border-top: solid 3px #0f70da;
+  border-left: solid 3px #0f70da;
+}
+.kotak1 img {
+  padding: 10px;
+}
