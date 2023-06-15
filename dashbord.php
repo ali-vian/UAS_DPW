@@ -1,3 +1,16 @@
+<?php
+$nama = "admin";
+$pswrd = "1234";
+if(! isset($_POST['username']) ||
+! isset($_POST["password"])){
+  header("location:index.php");
+} 
+else if(!($_POST['username'] == $nama &&
+ $_POST['password']==$pswrd)){
+  header("location:index.php?erorr=1");
+};
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +25,7 @@
         <div class="logo">
           <img src="user.png" alt="" />
           <div class="caption">
-            <p>Muhammad Alivian Sidiq</p>
+            <p><?= $_POST["username"]; ?></p>
             <p>220411100082</p>
           </div>
         </div>
