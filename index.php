@@ -15,8 +15,10 @@
       </div>
       <div class="countainer2">
         <h3>Silahkan Login Terlebih Dahulu !</h3>
-        <table cellspacing="25">
-          <tr>
+        <form action="dashbord.php" method="post">
+
+          <table cellspacing="25">
+            <tr>
             <td>
               <label for="username">Username</label>
             </td>
@@ -25,6 +27,8 @@
                 type="text"
                 id="username"
                 placeholder="Masukkan Username"
+                name="username"
+                required
               />
             </td>
           </tr>
@@ -33,20 +37,29 @@
               <label for="password">Password</label>
             </td>
             <td>
-              <input type="password" id="password" placeholder="********" />
+              <input type="password" 
+              id="password" 
+              placeholder="********" 
+              name="password" 
+              required/>
+            </td>
+          </tr>
+          <tr >
+            <td colspan="2">
+              <font color="red" size="2px">
+                <?php if(isset($_GET["erorr"])):?>
+                  <?="Username atau password salah";?>
+                  <?php endif ?>
+              </font>
             </td>
           </tr>
         </table>
         <div class="button">
-          <button>Daftar</button>
-          <button onclick="rendirect()">Login</button>
+          <button >Daftar</button>
+          <button type="submit">Login</button>
         </div>
+      </form>
       </div>
     </div>
-    <script>
-      function rendirect() {
-        window.location.href = "dashbord.html";
-      }
-    </script>
   </body>
 </html>
